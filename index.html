@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Shop fresh Pizza premium quality Pick Store. 
+      Find the fresh best Pizza, fresh Mozzarella, and other 
+      classic Margherita, Pepperoni, Neapolitan, King Slice, ."
+    />
+    <meta
+      name="keywords"
+      content="Shop fresh Pizza premium quality Pick Store."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Pizza Pick</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="red">
+        <div class="black">
+          <div class="logo"><a href="#">PICK</a></div>
+          <div class="top">
+            <p>Testy</p>
+            <span>Pizza</span>
+          </div>
+          <div class="medal">
+            <div class="order" id="order-box">
+              <p>Order</p>
+              <h4>NOW</h4>
+            </div>
+            <div class="pick" id="pick-box"></div>
+            <div class="offer clipped">
+              <p>2x1</p>
+              <span>Offer</span>
+            </div>
+          </div>
+          <div class="m-bottom" id="pick-list"></div>
+          <div class="num"><b>1</b><b>2</b><b>3</b></div>
+          <div class="bottom" id="price-cards"></div>
+        </div>
+      </div>
+      <div class="tel">
+        <h6>Cash on Delivery</h6>
+        <h4>delivery: +1 542 3585 000</h4>
+      </div>
+    </main>
+    <!-- END OF MAIN -->
+    <aside class="ingredients">
+      <button class="close-ingredients">&#10006;</button>
+      <h2>INGREDIENTS</h2>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="margherita">Margherita</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="cheese">Cheese</option>
+        <option value="meat">Meat</option>
+        <option value="oliveOil">Olive Oil</option>
+      </select>
+      <!-- End Filter -->
+      <div class="ingredients-holder">
+        <div id="product-list" class="product-list"></div>
+        <!-- End Product List -->
+        <div class="cart">
+          <h3>Your Picks</h3>
+          <div id="cart-content" class="cart-content"></div>
+          <!-- End Cart Content -->
+          <p class="cart-total">Your Total: $0.00</p>
+          <button class="conform-btn">conform</button>
+        </div>
+        <!-- End of CART  -->
+      </div>
+    </aside>
+    <!-- END OF INGREDIENTS MENU -->
+    <aside class="left-side">
+      <span class="close-leftSide"> &#10006; </span>
+      <h2>ORDER NOW</h2>
+      <div class="wrapper">
+        <div class="form">
+          <!-- Fullname of the user -->
+          <div class="inputfield">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              class="input"
+              id="fullName"
+              placeholder="Full Name"
+              name="fullName"
+              required
+              minlength="3"
+              maxlength="100"
+            />
+          </div>
+          <!-- Phone Number of the user -->
+          <div class="inputfield">
+            <label for="phoneNum">Phone Number</label>
+            <input
+              type="tel"
+              class="input"
+              id="phoneNum"
+              placeholder="0123456789"
+              name="phoneNum"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+          <!-- Full Address -->
+          <div class="inputfield">
+            <label for="fullAddress">Full Address</label>
+            <textarea
+              name="fullAddress"
+              class="textarea"
+              id="fullAddress"
+              placeholder="Your Address"
+            ></textarea>
+          </div>
+          <!-- Submit -->
+          <div class="inputfield">
+            <input type="submit" value="PLACE ORDER" class="btn" />
+          </div>
+          <h4>OR</h4>
+          <!-- Credit-card -->
+          <h2>Pay with Cart</h2>
+          <div class="inputfield">
+            <label for="cardNumber">Card Number</label>
+            <input
+              type="text"
+              class="input"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+          </div>
+          <div class="inputfield">
+            <label for="cardExpiry">Expiry Date</label>
+            <input
+              type="text"
+              class="input"
+              id="cardExpiry"
+              placeholder="xx/xx"
+            />
+          </div>
+          <div class="inputfield">
+            <label for="cardCcv">CCV</label>
+            <input type="text" class="input" id="cardCcv" placeholder="xxx" />
+          </div>
+          <!-- End of Credit-card -->
+          <!-- Submit -->
+          <div class="inputfield">
+            <input type="submit" value="ORDER" class="btn" />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- END OF LEFT SIDE -->
+    <footer>
+      <div class="footer-holder">
+        <div class="footer-item">
+          <h3>Fresh</h3>
+          <div class="txt-desc">
+            <p class="ele">Margherita</p>
+            <p class="ele">Pepperoni</p>
+            <p class="ele">Neapolitan</p>
+            <p class="ele">King Slice</p>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <div class="testimonials">
+            <div class="testimonial-slider">
+              <div class="testimonial active">
+                <img src="./img/extra.jpg" alt="" />
+                <h4>Margherita</h4>
+                <!-- <p>"Logo changed my day. It's best fresh pizza"</p> -->
+                <ul>
+                  <li>Basil</li>
+                  <li>Passata</li>
+                  <li>Olive Oil</li>
+                </ul>
+              </div>
+              <div class="testimonial">
+                <img src="./img/neapolitan.jpg" alt="" />
+                <h4>Neapolitan</h4>
+                <!-- <p>"Best Pizza shop, I've ever see, The cheese is perfect."</p> -->
+                <ul>
+                  <li>Olive</li>
+                  <li>Tomato</li>
+                  <li>Mozzarella</li>
+                </ul>
+              </div>
+              <div class="testimonial">
+                <img src="./img/sicilian.jpg" alt="" />
+                <h4>Pepperoni</h4>
+                <!-- <p>"Great for everyone. The place is very clean."</p> -->
+                <ul>
+                  <li>Garlic</li>
+                  <li>Paprika</li>
+                  <li>Black Pepper</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <div class="logo"><a href="#">PICK</a></div>
+        </div>
+
+        <div class="footer-item">
+          <h4 class="icons-title">our social media</h4>
+          <ul class="footer-icons">
+            <li>
+              <a href="#"><img src="img/footer/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/footer/linkedin.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/footer/instagram.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="design">
+        <span>© All Right Reserved</span>
+        <a href="#">Tamim</a>
+      </div>
+    </footer>
+    <!--  END OF FOOTER  -->
+    <script type="module" src="app.js" defer></script>
+  </body>
+</html>
